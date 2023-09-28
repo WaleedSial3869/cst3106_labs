@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section-heading {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .contact-info {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .education-section,
+        .work-section,
+        .skills-section {
+            margin-top: 20px;
+        }
+        .work-item {
+            margin-bottom: 20px;
+        }
+        .accomplishments {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Wюљђђё Sіюљ</h1>
+        <p>Cornwall, Ontario K6J 1K9 • 613-330-2869 • waleedsial911@gmail.com</p>
+    </div>
+    
+    <div class="education-section">
+        <h2 class="section-heading">Education</h2>
+        <p>Osborne Ave - Cornwall, Ontario</p>
+        <p>Resume Currently Working at Walmart Canada as Merchandising Associate</p>
+    </div>
+
+    <div class="professional-summary">
+        <h2 class="section-heading">Professional Summary</h2>
+        <p>Knowledgeable and dedicated customer service representative with extensive experience in the tech industry. Solid team player with outgoing, positive demeanor and proven skills in establishing rapport with clients. Motivated to maintain customer satisfaction and contribute to company success. Specialize in quality, speed and process optimization. Articulate, energetic and results-oriented with exemplary passion for developing relationships, cultivating partnerships and growing businesses.</p>
+    </div>
+
+    <div class="skills-section">
+        <h2 class="section-heading">Skills</h2>
+        <ul>
+            <li>CPR and first aid education</li>
+            <li>Power Trained for Forklift, Sprint, and Walkie by Raymond Johnson Equipment.</li>
+            <li>Somewhat a "people's Person" (Currently improving)</li>
+            <li>Teamwork</li>
+            <li>Leadership</li>
+            <li>Work Ethic</li>
+            <li>Sufficient Knowledge about Multicarrier plans such as Bell, Rogers, Telus etc.</li>
+        </ul>
+    </div>
+
+    <div class="work-section">
+        <h2 class="section-heading">Work History</h2>
+        <div class="work-item">
+            <h3>CPR and AED Certified</h3>
+            <p>Holy Trinity Catholic High School – Cornwall, ON</p>
+            <p>Fully Trained and certified with AED equipment and CPR procedure.</p>
+        </div>
+        <div class="work-item">
+            <h3>CAP Team 2 Associate, 08/2021 to Current</h3>
+            <p>Walmart Canada – Cornwall, Ontario</p>
+            <ul>
+                <li>Verified inventory computations by comparing to physical counts of stock, efficiently investigating discrepancies and adjusting errors.</li>
+                <li>Maintained merchandise presentation by removing damaged goods, stocking and rotating merchandise and signing and pricing merchandise.</li>
+                <li>Operated forklift to load and unload inventory and organized new inventory on department-specific pallets for easier output.</li>
+                <li>Organized on-site stockroom to maximize existing space and improve efficiency, boosting efficiency.</li>
+                <li>Safely and securely loaded items to prevent damage during transport.</li>
+                <li>Updated pricing by changing labels and signage for short-term promotions and final clearances.</li>
+                <li>Moved pallets to and from trucks and around warehouse with forklifts to stay on top of demanding schedules.</li>
+                <li>Adhered to safety processes and procedures when stocking store to avoid falls and other injuries.</li>
+                <li>Kept aisles clear and clean while restocking to prevent accidents and enable others to easily pass by.</li>
+            </ul>
+        </div>
+        <div class="work-item">
+            <h3>Bilingual Retail Sales Associate, 05/2019 to 03/2020</h3>
+            <p>Al Karim Plaza Pakistan – Bahawalpur, Punjab</p>
+            <ul>
+                <li>Prioritized helping customers over completing other routine tasks in store.</li>
+                <li>Listened to customer needs and desires to identify and recommend optimal products.</li>
+                <li>Built customer loyalty and retention by delivering excellent shopping experiences.</li>
+                <li>Answered customer questions about products and services, helped locate merchandise and promoted key items.</li>
+                <li>Conducted product demonstrations to highlight features and redirect objections to positive aspects.</li>
+                <li>Help increase stores (AOV) Average Order Value by upselling gift cards when they bought phones worth Rs.50,000 or higher.</li>
+                <li>Provided exceptional services and pleasant shopping experiences to retail customers.</li>
+                <li>Discussed Phone bundles with customers, outlined restrictions and educated on policies.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accomplishments">
+        <h2 class="section-heading">Accomplishments</h2>
+        <ul>
+            <li>Army Public School (Pakistan) Class Representative for 2 consecutive months.</li>
+            <li>Consistent member of the school council.</li>
+            <li>Assistant Director of APS MUN (One of the largest school events in Pakistan).</li>
+            <li>O-LEVEL EDUCATION.</li>
+        </ul>
+    </div>
+</body>
+</html>
