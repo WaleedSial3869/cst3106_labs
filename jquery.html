@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Dice Roller</title>
+    <style>
+        /* Completely New Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #6dd5ed, #2193b0);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #diceContainer {
+            display: grid;
+            place-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .die {
+            width: 120px;
+            height: 120px;
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+            place-items: center;
+            border: 3px solid #333;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: roll 1s ease-in-out;
+        }
+
+        @keyframes roll {
+            from { transform: rotateX(0) rotateY(0); }
+            to { transform: rotateX(360deg) rotateY(360deg); }
+        }
+
+        .dot {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #333;
+            visibility: hidden;
+        }
+
+        #rollDiceButton {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: #ff5722;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        #rollDiceButton:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+<div id="diceContainer">
+    <div class="die" data-value="1"></div>
+</div>
+
+<button id="rollDiceButton">Roll Dice</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#rollDiceButton').on('click', function() {
+            rollDie();
+        });
+    });
+
+    function rollDie() {
+        let diceValue = Math.floor(Math.random() * 6) + 1;
+        $('.die').attr('data-value', diceValue);
+
+        // Updated dot placement logic
+        placeDots(diceValue);
+    }
+
+    function placeDots(diceValue) {
+        const dotPositions = [
+            [],  // no dots for 0
+            [[2, 2]],  // 1
+            [[1, 1], [3, 3]],  // 2
+            [[1, 1], [2, 2], [3, 3]],  // 3
+            [[1, 1], [1, 3], [3, 1], [3, 3]],  // 4
+            [[1, 1], [1, 3], [2, 2], [3, 1], [3, 3]],  // 5
+            [[1, 1], [1, 2], [1, 3], [3, 1], [3, 2], [3, 3]]  // 6
+        ];
+
+        $('.dot').remove();
+        dotPositions[diceValue].forEach(position => {
+            $('.die').append(`<div class="dot" style="grid-row: ${position[0]}; grid-column: ${position[1]}; visibility: visible;"></div>`);
+        });
+    }
+</script>
+
+</body>
+</html>
